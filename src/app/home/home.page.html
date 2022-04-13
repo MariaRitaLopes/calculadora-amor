@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title >
+      CALCULADORA AMOROSA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div  class="color-change-4x">
+    <div id="container">
+      <p>
+        <ion-item>
+          <ion-label position="floating">Digite o primeiro nome:</ion-label>
+          <ion-input type="text" name="nome1" [(ngModel)] = "nome1"></ion-input>
+        </ion-item>
+        <br><br>
+        <ion-item>
+          <ion-label position="floating">Digite o segundo nome:</ion-label>
+          <ion-input type="text" name="nome2" [(ngModel)]= "nome2"></ion-input>
+        </ion-item>
+    </div>
+    <br><br>
+    <div class="resposta">
+        <ion-item>
+          <ion-label>Sua Pontuação: </ion-label>
+          <ion-note slot="end" color="primary">{{resultado}}</ion-note>
+        </ion-item>
+        <br>
+        <ion-item color="dark">
+          <ion-label>{{mensagem}}</ion-label>
+        </ion-item>
+    </div>
+    <section>
+      <ion-button expand="block" (click)="enviarDados()"> Calcular Match </ion-button>
+    </section>
+  </div>
+</ion-content>

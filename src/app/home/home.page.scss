@@ -1,0 +1,102 @@
+
+ion-title {
+  text-align: center;
+  background: linear-gradient(to right,
+  #d279bd 25%, #9ffb87 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+ion-item {
+  text-align: center;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+ion-button {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75%;
+  transform: translateY(-50%);
+  height: 10%;
+  font-size: 20px;
+  color: aliceblue;
+
+}
+ion-note{
+  font-size: 16px;
+}
+.color-change-4x {
+  height: 100%;
+  width: 100%;
+	-webkit-animation: color-change-4x 6s linear infinite alternate both;
+	        animation: color-change-4x 6s linear infinite alternate both;
+}
+
+
+ @-webkit-keyframes color-change-4x {
+  0% {
+    background: #19dcea;
+  }
+  33.3333% {
+    background: #b22cff;
+  }
+  66.666% {
+    background: #ea2222;
+  }
+  100% {
+    background: #f5be10;
+  }
+}
+@keyframes color-change-4x {
+  0% {
+    background: #19dcea;
+  }
+  33.3333% {
+    background: #b22cff;
+  }
+  66.666% {
+    background: #ea2222;
+  }
+  100% {
+    background: #f5be10;
+  }
+}
+.resposta {
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+
+
